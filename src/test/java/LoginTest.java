@@ -32,7 +32,7 @@ public class LoginTest extends BaseUiTest{
        //createUser(user);
     }
 
-    @Test   // тест 1
+    @Test
     @DisplayName("Проверить вход по кнопке «Личный кабинет» в шапке главной странице")
     @Description("Пользователь может авторизоваться через кнопку «Личный кабинет» в шапке главной странице")
     public void testButtonPersonalAccount() {
@@ -51,7 +51,7 @@ public class LoginTest extends BaseUiTest{
         Assert.assertEquals("Оформить заказ", text);
     }
 
-    @Test   // тест 2
+    @Test
     @DisplayName("Проверить вход по кнопке «Войти в аккаунт» на главной странице")
     @Description("Пользователь может авторизоваться через кнопку «Войти в аккаунт» на главной странице")
     public void testButtonLoginAccountMain() {
@@ -71,7 +71,7 @@ public class LoginTest extends BaseUiTest{
         Assert.assertEquals("Оформить заказ", text);
     }
 
-    @Test   // тест 3
+    @Test
     @DisplayName("Проверить вход по кнопке «Войти» в форме регистрации пользователя")
     @Description("Пользователь может авторизоваться через кнопку «Войти» в форме регистрации пользователя")
     public void testButtonLoginFormRegistration() {
@@ -96,7 +96,7 @@ public class LoginTest extends BaseUiTest{
         Assert.assertEquals("Оформить заказ", text);
     }
 
-    @Test   // тест 4
+    @Test
     @DisplayName("Проверить вход по кнопке «Войти» в форме восстановления пароля")
     @Description("Пользователь может авторизоваться через кнопку «Войти» в форме восстановления пароля")
     public void testButtonLoginFormPasswordRecovery() {
@@ -107,9 +107,9 @@ public class LoginTest extends BaseUiTest{
         //Проверить видимость формы Вход
         mainLoginPage.visibilityFormLogin();
         // Кликнуть по кнопке "Зарегистрироваться" в форме "Вход"
-        mainLoginPage.clickButtonRestorePasswordFormLogin(); ////////
+        mainLoginPage.clickButtonRestorePasswordFormLogin();
         // Проверить видимость формы регистрации
-        mainLoginPage.visibilityFormPasswordRecovery(); /////////
+        mainLoginPage.visibilityFormPasswordRecovery();
         // Кликнуть по кнопке "Войти" для перехода в форму Вход
         mainLoginPage.clickButtonLoginGoLoginForm();
         // Заполнить поля Email и Пароль в форме Вход
