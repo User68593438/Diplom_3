@@ -1,7 +1,5 @@
 package model;
-
 import lombok.*;
-
 
 // Авторизировать зарегистрированного пользователя
 @Data
@@ -11,5 +9,4 @@ public class UserLoginModel {
 
     private String email;
     private String password;
-
 }

@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 
 public class MainConstructorSectionPage {
@@ -63,5 +62,4 @@ public class MainConstructorSectionPage {
         WebElement activeSectionsStuffingElement = wait.until(ExpectedConditions.visibilityOfElementLocated(activeSectionsStuffing));
         return activeSectionsStuffingElement.getText();
     }
-
 }

@@ -71,6 +71,7 @@ public class MainLoginPage {
     public void clickButtonLoginGoLoginForm() {
         driver.findElement(buttonLoginGoLoginForm).click();
     }
+
     @Step("Кликнуть по кнопке Восстановить пароль в форме Вход")
     public void clickButtonRestorePasswordFormLogin() {
         driver.findElement(buttonRestorePasswordFormLogin).click();

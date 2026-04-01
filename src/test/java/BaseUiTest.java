@@ -22,9 +22,7 @@ public class BaseUiTest {
         if ("yandex".equals(browser)) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
-
             options.setBinary("C:/Users/olya-/AppData/Local/Yandex/YandexBrowser/Application/browser.exe");
-
             driver = new ChromeDriver(options);
         } else {
             WebDriverManager.chromedriver().setup();
@@ -39,7 +37,6 @@ public class BaseUiTest {
         mainRegistrationPage = new MainRegistrationPage(driver);
         mainLoginPage = new MainLoginPage(driver);
         mainConstructorSectionPage = new MainConstructorSectionPage(driver);
-
     }
 
     // Закрыть браузер
@@ -47,7 +44,6 @@ public class BaseUiTest {
     public void tearDown() {
         driver.quit();
     }
-
 }
 
 

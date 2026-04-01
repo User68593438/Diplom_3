@@ -9,7 +9,6 @@ import org.junit.Before;
 import org.junit.Test;
 import page.MainLoginPage;
 import page.MainRegistrationPage;
-
 import static Steps.UserApiSteps.createUser;
 import static Steps.UserApiSteps.deleteUser;
 import static data.TestData.*;
@@ -24,12 +23,10 @@ public class LoginTest extends BaseUiTest{
     public void setUp() {
         mainRegistrationPage = new MainRegistrationPage(driver);
         mainLoginPage = new MainLoginPage(driver);
-
         UserModel newUser = new UserModel(EMAIL, PASSWORD, NAME);
         Response response = createUser(newUser);
         token = response.jsonPath().getString("accessToken");
         user = new UserLoginModel(EMAIL, PASSWORD);
-       //createUser(user);
     }
 
     @Test
@@ -127,5 +124,4 @@ public class LoginTest extends BaseUiTest{
             deleteUser(token);
         }
     }
-
 }

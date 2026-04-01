@@ -13,10 +13,10 @@ public class ConstructorSectionTest extends BaseUiTest{
     public void testActiveSectionsBun() {
         // Открыть сайт
         driver.get(BASE_URI);
+        mainConstructorSectionPage.clickButtonSauce();
         mainConstructorSectionPage.clickButtonBun();
         String text = mainConstructorSectionPage.returnActiveSectionsBun();
         Assert.assertEquals("Булки",text);
-
     }
 
     @Test

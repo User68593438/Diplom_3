@@ -5,7 +5,6 @@ import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import model.UserModel;
-
 import static data.TestData.*;
 import static io.restassured.RestAssured.given;
 
@@ -33,6 +32,5 @@ public class UserApiSteps {
                 .delete(TestData.BASE_URI + TestData.DELETE_USER)
                 .then()
                 .extract().response();
-
     }
 }

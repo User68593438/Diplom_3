@@ -2,7 +2,6 @@ import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Assert;
 import org.junit.Test;
-
 import static data.TestData.*;
 
 public class RegistrationTest extends BaseUiTest {
@@ -26,7 +25,6 @@ public class RegistrationTest extends BaseUiTest {
         //Проверить видимость кнопки Войти
         String text = mainRegistrationPage.visibilityButtonLogin();
         Assert.assertEquals("Вход", text);
-
     }
 
     @Test
@@ -48,8 +46,5 @@ public class RegistrationTest extends BaseUiTest {
         //Проверить видимость текста "Некорректный пароль"
         String text = mainRegistrationPage.visibilityErrorIncorrectPassword();
         Assert.assertEquals("Некорректный пароль", text);
-
     }
-
-
 }
